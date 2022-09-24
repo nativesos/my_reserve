@@ -4,6 +4,9 @@ import 'package:flutter/foundation.dart';
 import 'local_storage.dart';
 
 
+/// It allows extracting the unique identifier per cell phone
+/// to serve as a reservation id in this case.
+
 class DeviceInfo{
 
   static late String _phoneId = '';

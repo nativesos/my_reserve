@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
+
+import 'package:provider/provider.dart';
+
 import 'package:my_reserve/src/dashboard/ui/widget/custom_dialog_widget.dart';
 import 'package:my_reserve/src/dashboard/viewmodel/dashboard_model.dart';
 import 'package:my_reserve/src/dashboard/viewmodel/dashboard_viewmodel.dart';
 import 'package:my_reserve/src/device_info.dart';
-import 'package:provider/provider.dart';
 
+
+/// Customized Grid to load the data when it is available
 class CustomGridView extends StatefulWidget {
+
   @override
   State<CustomGridView> createState() => _CustomGridViewState();
 }
 
 class _CustomGridViewState extends State<CustomGridView> {
+
+  ///provider instance and product listing assignment from services and repositories
 
   late List<DasboardModel> cradsData = [];
 
@@ -59,6 +66,9 @@ class _CustomGridViewState extends State<CustomGridView> {
                     backgroundColor: _colorProperty(model, index)),
                   onPressed: () {
 
+                    /// Dialog that shows the selected item, sending by reference the data to be
+                    /// modified depending on the actions
+
                     showDialog(context: context, builder: (_){
                       return CustomDialog(
                         tittle: cradsData[index].hour,
@@ -78,7 +88,7 @@ class _CustomGridViewState extends State<CustomGridView> {
         });
   }
 
-
+  ///Operation for color change depending on the state
   MaterialStateProperty<Color>?  _colorProperty(DashboardViewModel model, int index){
     return MaterialStateProperty.all<Color>(
         model.dasboardModel[index].status == "Taked"?
@@ -86,6 +96,7 @@ class _CustomGridViewState extends State<CustomGridView> {
         Colors.green);
   }
 
+  ///Extraction of main dialog to make it more readable
   Widget _dialogData(int index){
     return Padding(
         padding: const EdgeInsets.all(15.0),

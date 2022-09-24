@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 List<DasboardModel> dasboardModelFromJson(String str) => List<DasboardModel>.from(json.decode(str).map((x) => DasboardModel.fromJson(x)));

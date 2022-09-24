@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+
+import 'src/device_info.dart';
+import 'package:provider/provider.dart';
+
 import 'package:my_reserve/src/dashboard/ui/view/dashboard.dart';
 import 'package:my_reserve/src/dashboard/viewmodel/dashboard_viewmodel.dart';
 import 'package:my_reserve/src/local_storage.dart';
 
-import 'src/device_info.dart';
-
-import 'package:provider/provider.dart';
-
 void main() {
 
-  /** Correcccion error de inicio para desktop */
+  /// Correcccion error de inicio para desktop
   WidgetsFlutterBinding.ensureInitialized();
 
-  /** Shared preferences Started Point **/
+  /// Shared preferences Started Point
   LocalStorage.configurePreferences();
 
 
@@ -22,7 +22,7 @@ void main() {
 }
 
 
-/** First Run Application and charger Providers **/
+/// First Run Application and charger Providers
 class MainApp extends StatelessWidget {
   const MainApp({Key? key}) : super(key: key);
 
@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
 
-    /** Device Info initial configuration **/
+    /// Device Info initial configuration
     DeviceInfo.configureID();
     super.initState();
   }

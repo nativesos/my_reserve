@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_reserve/src/dashboard/viewmodel/dashboard_viewmodel.dart';
 
-import '../view/custom_text_button.dart';
+import 'custom_text_button.dart';
 
 class CustomResponseDialog extends StatelessWidget {
 

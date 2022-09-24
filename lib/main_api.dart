@@ -1,3 +1,7 @@
+
+
+///Some constants used by enums to make them more readable and -
+///understandable when checking the information
 enum MainApi {
   url,
 }
@@ -11,7 +15,9 @@ extension ValueConstant on MainApi {
 }
 
 
-
+/// Error network constant
+/// is posiblle agree more messages or errors
+/// 404, 303, etc
 enum ErrorConnection {
   internet,
 }
