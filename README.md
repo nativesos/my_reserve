@@ -11,10 +11,13 @@ This project is a starting point for a Flutter application.
 
 
 ### Data Imported
-<img width="216" alt="Screen Shot 2022-09-25 at 3 43 48 AM" src="https://user-images.githubusercontent.com/53523825/192104362-48877298-cd2a-428b-a3b6-753bfcf00db3.png">
+<img width="219" alt="Screen Shot 2022-09-25 at 3 43 05 AM" src="https://user-images.githubusercontent.com/53523825/192104582-63687a47-2c82-4289-8e38-c220f9c29a3a.png">
 
 ### Look Taked Reservation
 <img width="224" alt="Screen Shot 2022-09-25 at 3 43 44 AM" src="https://user-images.githubusercontent.com/53523825/192104380-bf54c38a-b6e4-4fe0-b97e-ddc35215c0b9.png">
+
+### Triyin modify taked reservation
+<img width="216" alt="Screen Shot 2022-09-25 at 3 43 48 AM" src="https://user-images.githubusercontent.com/53523825/192104362-48877298-cd2a-428b-a3b6-753bfcf00db3.png">
 
 ### Taked a reservation
 <img width="216" alt="Screen Shot 2022-09-25 at 3 43 11 AM" src="https://user-images.githubusercontent.com/53523825/192104449-cdcf3e37-b5cd-4d1a-818f-cddefe5ded40.png">
